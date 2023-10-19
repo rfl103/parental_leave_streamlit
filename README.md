@@ -1,2 +1,3 @@
-# parental_leave_streamlit
-Streamlit app showing crowdsourced parental leave data
+# Streamlit Dashboard
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://parentalleaveapp-gf6l8psyub3fkngmlf7czj.streamlit.app/)
