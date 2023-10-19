@@ -17,7 +17,7 @@ parental_leave_data["Total Maternity Leave"] = parental_leave_data["Paid Materni
 parental_leave_data["Total Paternity Leave"] = parental_leave_data["Paid Paternity Leave"]+parental_leave_data["Unpaid Paternity Leave"]
 
 #finding industry medians
-median_leave_data = parental_leave_data.groupby("Industry")["Total Maternity Leave", "Total Paternity Leave"].median().reset_index()
+median_leave_data = parental_leave_data.groupby("Industry")[["Total Maternity Leave", "Total Paternity Leave"]].median().reset_index()
 
 tab1, tab2, tab3 = st.tabs(["Industries that Offer the Most Maternity Leave", "Industries that Offer the Least Maternity Leave",
                       "Industries That Offer the Most Paternity Leave"])
