@@ -99,13 +99,13 @@ with b1:
     #Box Plot for Paid Maternity and Paternity Leave
     fig = px.box(parental_leave_data_selection, y=["Paid Maternity Leave", "Paid Paternity Leave"],
                  title="Paid Maternity and Paternity Leave for Selected Industry")
-    st.write(fig)
+    st.plotly_chart(fig)
 
 with b2:
     #Box Plot for Total Maternity and Paternity Leave
     fig = px.box(parental_leave_data_selection, y=["Total Maternity Leave", "Total Paternity Leave"],
                  title="Total Maternity and Paternity Leave for Selected Industry")
-    st.write(fig)
+    st.plotly_chart(fig)
 
 
 
